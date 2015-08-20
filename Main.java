@@ -5,7 +5,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	    // write your code here
 
         //System.out.println("Hello World!");
         //System.out.println("Learning Java!");
@@ -95,5 +95,70 @@ public class Main {
         x = scanner.nextDouble();
         System.out.println("Two to the power of " + x + " is " + Math.pow(2, x));
         */
+
+       /* // Chapter 4 Ex 3
+       int sum;
+       int count;
+       sum = 0;
+       count =1 ;
+       while(sum < 10){
+         sum = sum + count;
+         count++;
+         System.out.println("sum = " + sum);
+         System.out.println("count = " + count);
+       }
+       System.out.println("sum = " + sum);
+       System.out.println("count = " + count);
+       */
+
+        /* // Chapter 4 Ex 4
+       int sum = 2;
+       int number = 3;
+       do{
+         sum = sum + number;
+         number++;
+         System.out.println("sum = " + sum);
+         System.out.println("number = " + number);
+       }while(sum < 3*number);
+       System.out.println("sum = " + sum);
+       System.out.println("sum = " + sum);
+       */
+
+       /*// Chapter 4 Ex 5
+       int outer = 1;
+       while(outer < 4){
+          int inner = 1;
+          while(inner <= outer){
+            System.out.println("outer is " + outer + " inner is " + inner);
+            inner += 3;
+          }
+        outer += 2;
+        System.out.println("outer is " + outer + " inner is " + inner);
+       }
+      */
+
+      /*// Chapter 4 Ex 6
+      int i, j;
+      for(i = 1; i <= 5; i++){
+        for(j = 1; j <= 5-i; j++)
+           System.out.print(" ");
+
+        for(j = 1; j <= 2*i; j++)
+           System.out.print("*");
+      System.out.println();
+     }*/
+
+     int i;
+
+     System.out.println("Original Price 30% off 50% off 70% off");
+
+     for(i = 5; i <= 50; i+=5){
+        double cost;
+        cost = i;
+
+        System.out.printf("%10.2f %10.2f %7.2f %7.2f", cost, cost *.7, cost *.5, cost *.3);
+        System.out.println();
+     }
+
     }
 }
